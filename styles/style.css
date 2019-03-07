@@ -5,6 +5,9 @@
     font-family: 'Nunito', sans-serif;
 }
 
+body {
+    margin-right: 20px;
+}
 
 a {
     text-decoration: none;
@@ -39,9 +42,15 @@ li {
 .navBar {
     position: fixed;
     width: 100%;
-    background-color: #080808;
-    /* background-color: linear-gradient(to left,#f0f0f0, #ffffff); */
+    /* background-color: #080808; */
+    background-color: linear-gradient(to left,#f0f0f0, #ffffff); 
+    transition: background-color 500ms linear;
     color: #690469;
+}
+
+.navBar.nav-colored {
+    background-color: white;
+    transition: background-color 500ms linear;
 }
 
 .logoImage {
@@ -62,13 +71,13 @@ li {
 }
 
 #intro {
-    color: purple;
+    color: #690469;
     margin-top: 50px;
 }
 
 .introText {
    font-size: 2em;
-   color: purple;
+   color: #690469;
    font-family: 'Raleway';
 }
 
@@ -100,7 +109,7 @@ li {
 }
 
 
-.h1Nvici{
+.h1Nvici {
     color: #690469;
     font-size: 1.9em;
     font-style: italic;
@@ -112,7 +121,7 @@ li {
 hr.style-one {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(190, 11, 182, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(190, 11, 182, 0.75));
     width: 70%;
     display: flex;
     align-self: flex-end;
@@ -120,11 +129,37 @@ hr.style-one {
 }
 
 .aboutNVici {
-    color: purple;
+    color: #690469;
     padding-bottom: 30px; 
     padding-top: 5px;
 }
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
 
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-soundcloud {
+    background: #ff4800;
+    color: white;
+}
+
+.fa-mixcloud {
+    background: #273a4b;
+    color: white;
+}
+
+a.fa:hover {
+    color: #a8a8a8;
+}
 
 @media screen and (max-width: 600px){
  a {
@@ -135,12 +170,17 @@ hr.style-one {
     display: block;
     position:absolute;
     right: 20px;
-    top: 20px;
-    
+    top: 20px;  
 }
+
 ul {
     padding-bottom: 20px;
 }
+
+.navBar {
+    background-color: white;
+}
+
 .responsive a {
     display:flex;
 }
@@ -148,16 +188,16 @@ ul {
 .responsive ul {
     flex-direction: column;
     padding-bottom: 0px;
-   
 }
 
 .responsive .topLi {
      padding-top: 40px; 
 }
+
 .aboutDiv, .containerDjing, .containerProduction, .containerContact, .containerIntro {
-    width: 80%;
-    
+    width: 80%;  
 }
+
 }
 
 
