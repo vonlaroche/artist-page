@@ -22,3 +22,10 @@ a.forEach(element => {
   }
 });
 
+window.addEventListener('scroll', function (e) {
+    if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+            x.classList.add('nav-colored');
+        } else {
+            x.classList.remove('nav-colored');
+        }
+});
