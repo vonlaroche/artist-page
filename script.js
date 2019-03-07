@@ -4,7 +4,7 @@ var a = document.querySelectorAll("a");
 
 btn.addEventListener("click", function(event){
     event.preventDefault();
-    if (x.className === "navBar") {
+    if (x.className === "navBar" || x.className === "navBar nav-colored") {
         x.classList.add("responsive");
     } else {
         x.classList.remove("responsive");
@@ -28,4 +28,5 @@ window.addEventListener('scroll', function (e) {
         } else {
             x.classList.remove('nav-colored');
         }
+    
 });
